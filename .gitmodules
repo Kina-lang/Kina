@@ -1,0 +1,9 @@
+[submodule "repos/lexer"]
+	path = repos/lexer
+	url = https://github.com/Kina-lang/Lexer.git
+[submodule "repos/compiler"]
+	path = repos/compiler
+	url = https://github.com/Kina-lang/Compiler.git
+[submodule "repos/utils"]
+	path = repos/utils
+	url = https://github.com/Kina-lang/Utils.git
