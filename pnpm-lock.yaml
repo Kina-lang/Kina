@@ -217,8 +217,20 @@ importers:
         specifier: ^4.4.3
         version: 4.4.3
 
+  repos/ast:
+    dependencies:
+      '@kina-lang/lexer':
+        specifier: workspace:*
+        version: link:../lexer
+      '@kina-lang/utils':
+        specifier: workspace:*
+        version: link:../utils
+
   repos/compiler:
     dependencies:
+      '@kina-lang/ast':
+        specifier: workspace:*
+        version: link:../ast
       '@kina-lang/lexer':
         specifier: workspace:*
         version: link:../lexer

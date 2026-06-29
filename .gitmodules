@@ -7,3 +7,9 @@
 [submodule "repos/utils"]
 	path = repos/utils
 	url = https://github.com/Kina-lang/Utils.git
+[submodule "repos/ast"]
+	path = repos/ast
+	url = https://github.com/Kina-lang/AST.git
+[submodule "repos/semantic-analyzer"]
+	path = repos/semantic-analyzer
+	url = https://github.com/Kina-lang/SemanticAnalyzer.git
