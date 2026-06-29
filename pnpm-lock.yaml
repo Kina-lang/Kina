@@ -226,7 +226,39 @@ importers:
         specifier: workspace:*
         version: link:../utils
 
+  repos/cli:
+    dependencies:
+      '@kina-lang/compiler':
+        specifier: workspace:*
+        version: link:../compiler
+    devDependencies:
+      '@types/node':
+        specifier: ^26.0.1
+        version: 26.0.1
+
   repos/compiler:
+    dependencies:
+      '@kina-lang/ast':
+        specifier: workspace:*
+        version: link:../ast
+      '@kina-lang/ir-builder':
+        specifier: workspace:*
+        version: link:../ir-builder
+      '@kina-lang/lexer':
+        specifier: workspace:*
+        version: link:../lexer
+      '@kina-lang/semantic-analyzer':
+        specifier: workspace:*
+        version: link:../semantic-analyzer
+      '@kina-lang/utils':
+        specifier: workspace:*
+        version: link:../utils
+    devDependencies:
+      '@types/node':
+        specifier: ^26.0.1
+        version: 26.0.1
+
+  repos/ir-builder:
     dependencies:
       '@kina-lang/ast':
         specifier: workspace:*
@@ -234,9 +266,6 @@ importers:
       '@kina-lang/lexer':
         specifier: workspace:*
         version: link:../lexer
-      '@kina-lang/semantic-analyzer':
-        specifier: workspace:*
-        version: link:../semantic-analyzer
       '@kina-lang/utils':
         specifier: workspace:*
         version: link:../utils

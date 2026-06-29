@@ -16,3 +16,9 @@
 [submodule "repos/ir-builder"]
 	path = repos/ir-builder
 	url = https://github.com/Kina-lang/IRBuilder.git
+[submodule "repos/runtime"]
+	path = repos/runtime
+	url = https://github.com/Kina-lang/Runtime.git
+[submodule "repos/cli"]
+	path = repos/cli
+	url = https://github.com/Kina-lang/Cli.git
