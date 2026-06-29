@@ -13,3 +13,6 @@
 [submodule "repos/semantic-analyzer"]
 	path = repos/semantic-analyzer
 	url = https://github.com/Kina-lang/SemanticAnalyzer.git
+[submodule "repos/ir-builder"]
+	path = repos/ir-builder
+	url = https://github.com/Kina-lang/IRBuilder.git

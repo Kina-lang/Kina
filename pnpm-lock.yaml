@@ -234,6 +234,9 @@ importers:
       '@kina-lang/lexer':
         specifier: workspace:*
         version: link:../lexer
+      '@kina-lang/semantic-analyzer':
+        specifier: workspace:*
+        version: link:../semantic-analyzer
       '@kina-lang/utils':
         specifier: workspace:*
         version: link:../utils
@@ -247,6 +250,22 @@ importers:
       '@kina-lang/utils':
         specifier: workspace:*
         version: link:../utils
+
+  repos/semantic-analyzer:
+    dependencies:
+      '@kina-lang/ast':
+        specifier: workspace:*
+        version: link:../ast
+      '@kina-lang/lexer':
+        specifier: workspace:*
+        version: link:../lexer
+      '@kina-lang/utils':
+        specifier: workspace:*
+        version: link:../utils
+    devDependencies:
+      '@types/node':
+        specifier: ^26.0.1
+        version: 26.0.1
 
   repos/utils:
     devDependencies:
