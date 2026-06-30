@@ -1,3 +1,5 @@
 packages:
   - ./repos/*
   - ./repos/ext/*
+allowBuilds:
+  esbuild: true
