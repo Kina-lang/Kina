@@ -22,3 +22,6 @@
 [submodule "repos/cli"]
 	path = repos/cli
 	url = https://github.com/Kina-lang/Cli.git
+[submodule "repos/ext/vscode-extension"]
+	path = repos/ext/vscode-extension
+	url = https://github.com/Kina-lang/Vscode-extension.git
