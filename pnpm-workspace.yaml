@@ -2,5 +2,6 @@ packages:
   - ./repos/*
   - ./repos/ext/*
 allowBuilds:
+  '@designliquido/llvm-bindings': true
   esbuild: true
   unrs-resolver: true
