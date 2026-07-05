@@ -25,3 +25,6 @@
 [submodule "repos/ext/vscode-extension"]
 	path = repos/ext/vscode-extension
 	url = https://github.com/Kina-lang/Vscode-extension.git
+[submodule "repos/libraries"]
+	path = repos/libraries
+	url = https://github.com/Kina-lang/Libraries.git
