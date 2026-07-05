@@ -4,4 +4,6 @@ packages:
 allowBuilds:
   '@designliquido/llvm-bindings': true
   esbuild: true
+  tree-sitter: true
+  tree-sitter-c: true
   unrs-resolver: true

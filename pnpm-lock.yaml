@@ -247,7 +247,7 @@ importers:
     dependencies:
       '@designliquido/llvm-bindings':
         specifier: ^9.1.0
-        version: 9.1.0(supports-color@8.1.1)
+        version: 9.1.0
       '@kina-lang/ast':
         specifier: workspace:*
         version: link:../ast
@@ -263,6 +263,12 @@ importers:
       '@kina-lang/utils':
         specifier: workspace:*
         version: link:../utils
+      tree-sitter:
+        specifier: ^0.25.0
+        version: 0.25.0
+      tree-sitter-c:
+        specifier: ^0.24.1
+        version: 0.24.1(tree-sitter@0.25.0)
     devDependencies:
       '@types/node':
         specifier: ^26.0.1
@@ -1566,6 +1572,10 @@ packages:
   node-api-headers@1.9.0:
     resolution: {integrity: sha512-2oNILP4jXwRB4ywnYKjVk1YyJ96n2D4EOVJO6S3oYZ5PtbJrw3Yt9TpAuX3nBLMuzn74rnfGQrv13pS9vC+YiA==}
 
+  node-gyp-build@4.8.4:
+    resolution: {integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==}
+    hasBin: true
+
   normalize-exception@4.0.1:
     resolution: {integrity: sha512-2fUwKMZLYvHIHZN4a6Bt2FYEea6mDwQcTVCffRvQ1bJHndQRRrNhq8+WQiLolOzJ7bJl59SCURGSwCLvQv/X7w==}
     engines: {node: '>=18.18.0'}
@@ -1800,6 +1810,17 @@ packages:
   tinyrainbow@3.1.0:
     resolution: {integrity: sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==}
     engines: {node: '>=14.0.0'}
+
+  tree-sitter-c@0.24.1:
+    resolution: {integrity: sha512-lkYwWN3SRecpvaeqmFKkuPNR3ZbtnvHU+4XAEEkJdrp3JfSp2pBrhXOtvfsENUneye76g889Y0ddF2DM0gEDpA==}
+    peerDependencies:
+      tree-sitter: ^0.22.4
+    peerDependenciesMeta:
+      tree-sitter:
+        optional: true
+
+  tree-sitter@0.25.0:
+    resolution: {integrity: sha512-PGZZzFW63eElZJDe/b/R/LbsjDDYJa5UEjLZJB59RQsMX+fo0j54fqBPn1MGKav/QNa0JR0zBiVaikYDWCj5KQ==}
 
   ts-api-utils@2.5.0:
     resolution: {integrity: sha512-OJ/ibxhPlqrMM0UiNHJ/0CKQkoKF243/AEmplt3qpRgkW8VG7IfOS41h7V8TjITqdByHzrjcS/2si+y4lIh8NA==}
@@ -2080,15 +2101,15 @@ snapshots:
   '@designliquido/llvm-bindings@7.0.0':
     dependencies:
       bindings: 1.5.0
-      cmake-js: 8.0.0(supports-color@8.1.1)
+      cmake-js: 8.0.0
       node-addon-api: 8.9.0
     transitivePeerDependencies:
       - supports-color
 
-  '@designliquido/llvm-bindings@9.1.0(supports-color@8.1.1)':
+  '@designliquido/llvm-bindings@9.1.0':
     dependencies:
       bindings: 1.5.0
-      cmake-js: 8.0.0(supports-color@8.1.1)
+      cmake-js: 8.0.0
       node-addon-api: 8.9.0
     transitivePeerDependencies:
       - supports-color
@@ -2650,7 +2671,7 @@ snapshots:
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
 
-  cmake-js@8.0.0(supports-color@8.1.1):
+  cmake-js@8.0.0:
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
       fs-extra: 11.3.6
@@ -3139,6 +3160,8 @@ snapshots:
 
   node-api-headers@1.9.0: {}
 
+  node-gyp-build@4.8.4: {}
+
   normalize-exception@4.0.1:
     dependencies:
       is-error-instance: 3.0.1
@@ -3377,6 +3400,18 @@ snapshots:
       picomatch: 4.0.4
 
   tinyrainbow@3.1.0: {}
+
+  tree-sitter-c@0.24.1(tree-sitter@0.25.0):
+    dependencies:
+      node-addon-api: 8.9.0
+      node-gyp-build: 4.8.4
+    optionalDependencies:
+      tree-sitter: 0.25.0
+
+  tree-sitter@0.25.0:
+    dependencies:
+      node-addon-api: 8.9.0
+      node-gyp-build: 4.8.4
 
   ts-api-utils@2.5.0(typescript@6.0.3):
     dependencies:
