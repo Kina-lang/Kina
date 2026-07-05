@@ -320,8 +320,8 @@ importers:
   repos/ir-builder:
     dependencies:
       '@designliquido/llvm-bindings':
-        specifier: 7.0.0
-        version: 7.0.0
+        specifier: 9.1.0
+        version: 9.1.0
       '@kina-lang/ast':
         specifier: workspace:*
         version: link:../ast
@@ -428,9 +428,6 @@ packages:
   '@bcoe/v8-coverage@1.0.2':
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
-
-  '@designliquido/llvm-bindings@7.0.0':
-    resolution: {integrity: sha512-JS2NYPL/cyCuiBVWDfkHnhdKGujYrbyJwBMB9SgtChl9MqaeQTcUfmB9k07yocbgKeOyEjNwU/YclfpwaNVUcA==}
 
   '@designliquido/llvm-bindings@9.1.0':
     resolution: {integrity: sha512-tm/IamCgEAxRxsH7EZ0W/PipL69gh0lfdP2j9U9YZ7L9dbwT7nCip4w9jOrXUvA0lvRVs/m2bgDiW+8/agd/AQ==}
@@ -2097,14 +2094,6 @@ snapshots:
       '@babel/helper-validator-identifier': 7.29.7
 
   '@bcoe/v8-coverage@1.0.2': {}
-
-  '@designliquido/llvm-bindings@7.0.0':
-    dependencies:
-      bindings: 1.5.0
-      cmake-js: 8.0.0
-      node-addon-api: 8.9.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@designliquido/llvm-bindings@9.1.0':
     dependencies:
