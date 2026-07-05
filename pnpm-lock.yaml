@@ -220,16 +220,6 @@ importers:
         specifier: ^4.4.3
         version: 4.4.3
 
-  playground/llbind:
-    dependencies:
-      '@designliquido/llvm-bindings':
-        specifier: 7.0.0
-        version: 7.0.0
-    devDependencies:
-      '@types/node':
-        specifier: latest
-        version: 26.1.0
-
   repos/ast:
     dependencies:
       '@kina-lang/lexer':
@@ -255,6 +245,9 @@ importers:
 
   repos/compiler:
     dependencies:
+      '@designliquido/llvm-bindings':
+        specifier: ^9.1.0
+        version: 9.1.0(supports-color@8.1.1)
       '@kina-lang/ast':
         specifier: workspace:*
         version: link:../ast
@@ -361,6 +354,9 @@ importers:
       '@kina-lang/ast':
         specifier: workspace:*
         version: link:../ast
+      '@kina-lang/compiler':
+        specifier: workspace:*
+        version: link:../compiler
       '@kina-lang/lexer':
         specifier: workspace:*
         version: link:../lexer
@@ -429,6 +425,9 @@ packages:
 
   '@designliquido/llvm-bindings@7.0.0':
     resolution: {integrity: sha512-JS2NYPL/cyCuiBVWDfkHnhdKGujYrbyJwBMB9SgtChl9MqaeQTcUfmB9k07yocbgKeOyEjNwU/YclfpwaNVUcA==}
+
+  '@designliquido/llvm-bindings@9.1.0':
+    resolution: {integrity: sha512-tm/IamCgEAxRxsH7EZ0W/PipL69gh0lfdP2j9U9YZ7L9dbwT7nCip4w9jOrXUvA0lvRVs/m2bgDiW+8/agd/AQ==}
 
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
@@ -2081,7 +2080,15 @@ snapshots:
   '@designliquido/llvm-bindings@7.0.0':
     dependencies:
       bindings: 1.5.0
-      cmake-js: 8.0.0
+      cmake-js: 8.0.0(supports-color@8.1.1)
+      node-addon-api: 8.9.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@designliquido/llvm-bindings@9.1.0(supports-color@8.1.1)':
+    dependencies:
+      bindings: 1.5.0
+      cmake-js: 8.0.0(supports-color@8.1.1)
       node-addon-api: 8.9.0
     transitivePeerDependencies:
       - supports-color
@@ -2643,7 +2650,7 @@ snapshots:
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
 
-  cmake-js@8.0.0:
+  cmake-js@8.0.0(supports-color@8.1.1):
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
       fs-extra: 11.3.6
