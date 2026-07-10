@@ -334,6 +334,9 @@ importers:
       '@kina-lang/ast':
         specifier: workspace:*
         version: link:../ast
+      '@kina-lang/compiler':
+        specifier: workspace:*
+        version: link:../compiler
       '@kina-lang/lexer':
         specifier: workspace:*
         version: link:../lexer
@@ -363,12 +366,6 @@ importers:
       vitest:
         specifier: ^4.1.9
         version: 4.1.9(@types/node@26.0.1)(@vitest/coverage-v8@4.1.9)(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1))
-
-  repos/runtime/builder:
-    devDependencies:
-      '@types/node':
-        specifier: ^26.1.1
-        version: 26.1.1
 
   repos/semantic-analyzer:
     dependencies:
@@ -851,9 +848,6 @@ packages:
 
   '@types/node@26.1.0':
     resolution: {integrity: sha512-O0A1G3xPGy4w7AgQdAQYUlQ+BKk2Oovw8eRpofyp5KdBZULnbe+WqaOVNrm705SHphCiG4XHsACrSmPu1f+Kgw==}
-
-  '@types/node@26.1.1':
-    resolution: {integrity: sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw==}
 
   '@types/vscode@1.125.0':
     resolution: {integrity: sha512-0icm/ZQAaism87P0ekHqi4/Ju9du+Tm0RUW+y7vqRsxY2cY0FNRX1nAnaW7nT6npPt2tfHiheZ55Zm9UhqonFA==}
@@ -2499,10 +2493,6 @@ snapshots:
       undici-types: 8.3.0
 
   '@types/node@26.1.0':
-    dependencies:
-      undici-types: 8.3.0
-
-  '@types/node@26.1.1':
     dependencies:
       undici-types: 8.3.0
 
