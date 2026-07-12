@@ -367,6 +367,19 @@ importers:
         specifier: ^4.1.9
         version: 4.1.9(@types/node@26.0.1)(@vitest/coverage-v8@4.1.9)(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1))
 
+  repos/package-manager:
+    dependencies:
+      '@kina-lang/compiler':
+        specifier: workspace:*
+        version: link:../compiler
+      '@kina-lang/utils':
+        specifier: workspace:*
+        version: link:../utils
+    devDependencies:
+      '@types/node':
+        specifier: ^26.0.1
+        version: 26.1.0
+
   repos/semantic-analyzer:
     dependencies:
       '@kina-lang/ast':

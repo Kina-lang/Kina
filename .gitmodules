@@ -28,3 +28,6 @@
 [submodule "repos/libraries"]
 	path = repos/libraries
 	url = https://github.com/Kina-lang/Libraries.git
+[submodule "repos/package-manager"]
+	path = repos/package-manager
+	url = https://github.com/Kina-lang/PackageManager.git
