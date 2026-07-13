@@ -238,12 +238,15 @@ importers:
       '@kina-lang/compiler':
         specifier: workspace:*
         version: link:../compiler
+      '@kina-lang/package-manager':
+        specifier: workspace:*
+        version: link:../package-manager
       '@kina-lang/utils':
         specifier: workspace:*
         version: link:../utils
       axios:
         specifier: ^1.18.1
-        version: 1.18.1(supports-color@8.1.1)
+        version: 1.18.1
       smol-toml:
         specifier: ^1.7.0
         version: 1.7.0
@@ -375,6 +378,9 @@ importers:
       '@kina-lang/utils':
         specifier: workspace:*
         version: link:../utils
+      axios:
+        specifier: ^1.18.1
+        version: 1.18.1
     devDependencies:
       '@types/node':
         specifier: ^26.0.1
@@ -2687,7 +2693,7 @@ snapshots:
 
   acorn@8.17.0: {}
 
-  agent-base@6.0.2(supports-color@8.1.1):
+  agent-base@6.0.2:
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
@@ -2724,11 +2730,11 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.18.1(supports-color@8.1.1):
+  axios@1.18.1:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.6
-      https-proxy-agent: 5.0.1(supports-color@8.1.1)
+      https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
@@ -3125,9 +3131,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@5.0.1(supports-color@8.1.1):
+  https-proxy-agent@5.0.1:
     dependencies:
-      agent-base: 6.0.2(supports-color@8.1.1)
+      agent-base: 6.0.2
       debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
