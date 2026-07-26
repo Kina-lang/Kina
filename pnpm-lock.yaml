@@ -210,6 +210,9 @@ importers:
       chalk:
         specifier: ^5.6.2
         version: 5.6.2
+      esbuild:
+        specifier: ^0.28.1
+        version: 0.28.1
       safe-json-value:
         specifier: ^3.0.1
         version: 3.0.1
@@ -246,7 +249,7 @@ importers:
         version: link:../utils
       axios:
         specifier: ^1.18.1
-        version: 1.18.1
+        version: 1.18.1(supports-color@8.1.1)
       smol-toml:
         specifier: ^1.7.0
         version: 1.7.0
@@ -380,7 +383,7 @@ importers:
         version: link:../utils
       axios:
         specifier: ^1.18.1
-        version: 1.18.1
+        version: 1.18.1(supports-color@8.1.1)
     devDependencies:
       '@types/node':
         specifier: ^26.0.1
@@ -416,6 +419,19 @@ importers:
       '@types/node':
         specifier: ^26.0.1
         version: 26.0.1
+
+  repos/version-manager:
+    dependencies:
+      axios:
+        specifier: ^1.18.1
+        version: 1.18.1(supports-color@8.1.1)
+      esbuild:
+        specifier: ^0.28.1
+        version: 0.28.1
+    devDependencies:
+      '@types/node':
+        specifier: ^26.0.1
+        version: 26.1.1
 
 packages:
 
@@ -867,6 +883,9 @@ packages:
 
   '@types/node@26.1.0':
     resolution: {integrity: sha512-O0A1G3xPGy4w7AgQdAQYUlQ+BKk2Oovw8eRpofyp5KdBZULnbe+WqaOVNrm705SHphCiG4XHsACrSmPu1f+Kgw==}
+
+  '@types/node@26.1.1':
+    resolution: {integrity: sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw==}
 
   '@types/vscode@1.125.0':
     resolution: {integrity: sha512-0icm/ZQAaism87P0ekHqi4/Ju9du+Tm0RUW+y7vqRsxY2cY0FNRX1nAnaW7nT6npPt2tfHiheZ55Zm9UhqonFA==}
@@ -2515,6 +2534,10 @@ snapshots:
     dependencies:
       undici-types: 8.3.0
 
+  '@types/node@26.1.1':
+    dependencies:
+      undici-types: 8.3.0
+
   '@types/vscode@1.125.0': {}
 
   '@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@10.6.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3))(eslint@10.6.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
@@ -2693,7 +2716,7 @@ snapshots:
 
   acorn@8.17.0: {}
 
-  agent-base@6.0.2:
+  agent-base@6.0.2(supports-color@8.1.1):
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
@@ -2730,11 +2753,11 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.18.1:
+  axios@1.18.1(supports-color@8.1.1):
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.6
-      https-proxy-agent: 5.0.1
+      https-proxy-agent: 5.0.1(supports-color@8.1.1)
       proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
@@ -3131,9 +3154,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@5.0.1:
+  https-proxy-agent@5.0.1(supports-color@8.1.1):
     dependencies:
-      agent-base: 6.0.2
+      agent-base: 6.0.2(supports-color@8.1.1)
       debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
