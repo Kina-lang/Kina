@@ -40,3 +40,6 @@
 [submodule "repos/release"]
 	path = repos/release
 	url = https://github.com/Kina-lang/Release.git
+[submodule "repos/docs"]
+	path = repos/docs
+	url = https://github.com/Kina-lang/Docs.git
