@@ -43,3 +43,6 @@
 [submodule "repos/docs"]
 	path = repos/docs
 	url = https://github.com/Kina-lang/Docs.git
+[submodule "repos/lsp"]
+	path = repos/lsp
+	url = https://github.com/Kina-lang/LSP.git
