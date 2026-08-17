@@ -1,3 +1,6 @@
 [submodule "compiler"]
 	path = compiler
 	url = https://github.com/Kina-lang/Compiler.git
+[submodule "docs"]
+	path = docs
+	url = https://github.com/Kina-lang/Docs.git
