@@ -4,3 +4,6 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/Kina-lang/Docs.git
+[submodule "cli"]
+	path = cli
+	url = https://github.com/Kina-lang/Cli.git
