@@ -7,3 +7,6 @@
 [submodule "cli"]
 	path = cli
 	url = https://github.com/Kina-lang/Cli.git
+[submodule "libs/llvm"]
+	path = libs/llvm
+	url = https://github.com/Kina-lang/LLVM.git
