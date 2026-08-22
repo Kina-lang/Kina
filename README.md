@@ -39,6 +39,11 @@ Potentially:
 - TS/JS Interoperability
 - Bare metal compilation (no stdlib, memory management, ...)
 
+## Already implemented features
+
+- Lexer, tree builder and partial semantic analysis (only for some tokens, but easily extendable)
+- Init, compile commands in CLI (partial functionality)
+
 ## What is where
 
 - [Compiler](https://github.com/Kina-lang/Compiler)
