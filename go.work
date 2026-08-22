@@ -3,4 +3,5 @@ go 1.26.5
 use (
 	./cli
 	./compiler
+	./libs/llvm
 )
